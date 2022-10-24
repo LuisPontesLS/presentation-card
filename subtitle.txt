@@ -1,0 +1,6 @@
+O procedimento de esconder os conteúdos de ambas as abas falhou
+para a segunda aba (de redes sociais).
+No vídeo, 02:18. Talvez eu tenha "passado batido" aninhar
+toda este código em uma div, o que eu fiz depois com:
+<!--'div' adicionada--> <div class="informacoes-abas">
++/- linha 69 html

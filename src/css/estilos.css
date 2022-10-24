@@ -1,0 +1,219 @@
+body {
+    /* IMAGEM DE FUNDO: */
+    background-image: url(../assets/imagem-fundo-1.jpg);
+    background-repeat: no-repeat;
+    /*PARA O BODY SER COBERTO POR MAIS DA IMAGEM*/
+    background-size: cover;
+    background-position: center;
+
+    /* FONTES: */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f3f3f3;
+    font-size: 18px;
+
+    /*CENTRALIZANDO O CARTÃO (DIV PAI DE TODOS, BODY):
+    O DISPLAY FLEX POR PADRÃO AGE VERTICALMENTE (EIXO X)*/
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/*========================================================================
+TODO O main class="cartao" l22*/
+.cartao {
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #49AAEE;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*========================================================================
+TODAS IMG DA .ABA (ICONES)
+foi melhor configurado lá em baixo (.cartao .abas .aba)*/
+.abas img {
+    width: 30px;
+}
+
+/*========================================================================
+div class="minhas-informacoes": FOTO, TÍTULO E CARGO*/
+
+/*PARA OS 3 JUNTOS (FOTO, TÍTULO E CARGO): */
+.cartao .minhas-informacoes {
+    padding-top: 20px;
+
+    /* VAI COLOCAR OS FILHOS UM DO LADO DO OUTRO */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*alinha horiz por causa
+    do flex direction column*/
+    gap: 10px;
+}
+
+/*eles fizeram separado. Isso é adição minha*/
+/* .foto-perfil {
+    width: 200px;
+    border-radius: 100px;
+} */
+
+.cartao .minhas-informacoes img {
+    width: 200px;
+    border-radius: 100px;
+    border: 4px solid #49AAEE;
+}
+
+.cartao .minhas-informacoes .nome {
+    font-size: 26px;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+/*==================================================================*/
+
+/*div class="conteudo" - ÁREA DAS ABAS ATÉ O TEXTO 'SOBRE'*/
+.cartao .conteudo {
+    /* background-color: red; - Só para visualizar*/
+    margin-top: 15px;
+}
+
+.cartao .conteudo .abas {
+    display: flex;
+}
+
+.cartao .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /*FAZ UMA TRANSIÇÃO MAIS SUAVE NAS ABAS*/
+}
+
+.cartao .abas img {
+    width: 40px;
+}
+
+
+/*Por serem duas classes no mesmo elemento (.aba.selecionado), não separa
+essa aba estará sempre selecionada ao carregar*/
+.cartao .abas .aba.selecionado {
+    background-color: #262626;
+}
+
+.cartao .informacoes-abas {
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover {
+    background-color: #414141;
+}
+
+.informacoes-abas .informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+    /*2:17 esconde os conteúdos da aba (pelo menos o 1º)*/
+}
+
+/*2:22 linha 48 html quadro amarelo - sobre mim/////////////////////////////////////////////////////////////////////////////*/
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao {
+    font-size: 20px;
+    text-align: justify;
+
+    /*Limita a altura do texto e cria a rolagem*/
+    max-height: 180px;
+    overflow-y: auto;
+    /*Descolar o texto da barra*/
+    padding-right: 15px;
+}
+
+.informacoes-abas .descricao span {
+    color: #49AAEE;
+    font-weight: 600;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a {
+    /*02:11 video 2*/
+    /* background-color: red; */
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opscity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover {
+    /*Só muda a opacidade da cor*/
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo {
+    background-color: #06c185;
+}
+
+.redes-sociais .linkedin {
+    background-color: #1d87bd;
+}
+
+.redes-sociais .github {
+    background-color: #545454;
+}
+
+/* Eu que adicionei :) (além da aula) */
+.informacoes-abas .descricao p {
+    text-indent: 1em;
+}
+
+/*BARRA DE ROLAGEM --------------------------------------------------------*/
+.descricao::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar - largura de toda a barra de rolagem */
+}
+
+.descricao::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: black;
+    /* bar background color (where it scrolls) - cor do fundo da barra (onde ela rola) */
+}
+
+.descricao::-webkit-scrollbar-thumb {
+    background-color: #49AAEE;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid black;
+    /* creates padding around scroll thumb */
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*02:23 linha 145 css*/
