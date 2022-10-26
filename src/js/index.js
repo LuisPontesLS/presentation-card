@@ -30,21 +30,32 @@ abas.forEach(aba => {
         if (aba.classList.contains("selecionado")) {
             return;
         }
+        //Fatoração:
+        selecionarAba(aba)
+        mostrarInformacoesDaAba(aba)
+        // console.log("clicou na aba", aba); 
+    })  
+})
 
-        // console.log("clicou na aba", aba);
-        /* 3 - quando o usuário clicar, desmarcar a outra aba;
+function selecionarAba(aba) {
+     /* 3 - quando o usuário clicar, desmarcar a outra aba;
         VAI USAR A 'DOM' PARA DEMOVER A CLASS selecionado (linha 42 html)*/
         const abaSelecionada = document.querySelector(".aba.selecionado")
         abaSelecionada.classList.remove("selecionado")
         // 4 - marcar a aba clicada como "selecionado";
         aba.classList.add("selecionado")
-        // 5 - esconder o conteúdo anterios;
-        const informacaoSelecionada = document.querySelector(".informacao.selecionado")
-        console.log(informacaoSelecionada);
-        //escondendo o conteúdo:
-        informacaoSelecionada.classList.remove("selecionado")
+}
 
-        // 6 - mostrar o conteúdo da aba selecionada.
-        //1:48
-    })
-})
+function mostrarInformacoesDaAba(aba) {
+    // 5 - esconder o conteúdo anterios;
+    const informacaoSelecionada = document.querySelector(".informacao.selecionado")
+    console.log(informacaoSelecionada);
+    //escondendo o conteúdo:
+    informacaoSelecionada.classList.remove("selecionado")
+
+    // 6 - mostrar o conteúdo da aba selecionada.
+    const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
+    
+    const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba)
+    informacaoASerMostrada.classList.add("selecionado")
+}
