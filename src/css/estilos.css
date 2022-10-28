@@ -193,7 +193,7 @@ essa aba estará sempre selecionada ao carregar*/
     text-indent: 1em;
 }
 
-/*BARRA DE ROLAGEM --------------------------------------------------------*/
+/*BARRA DE ROLAGEM - ABA 1 -------------------------------------------------*/
 .descricao::-webkit-scrollbar {
     width: 12px;
     /* width of the entire scrollbar - largura de toda a barra de rolagem */
@@ -214,8 +214,9 @@ essa aba estará sempre selecionada ao carregar*/
     /* creates padding around scroll thumb */
 }
 
-/*--------------------------------------------------------------------------*/
-/*BARRA DE ROLAGEM --------------------------------------------------------*/
+/*.........................................................................*/
+
+/*BARRA DE ROLAGEM - ABA 2 ------------------------------------------------*/
 .redes-sociais::-webkit-scrollbar {
     width: 12px;
     /* width of the entire scrollbar - largura de toda a barra de rolagem */
@@ -235,4 +236,5 @@ essa aba estará sempre selecionada ao carregar*/
     border: 3px solid black;
     /* creates padding around scroll thumb */
 }
+/* ---------------------------------------------------------------------------- */
 /*02:23 linha 145 css*/
