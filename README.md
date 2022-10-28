@@ -16,8 +16,8 @@
     <h3>Aba 1 - Apresentação</h3>
     <img src="https://raw.githubusercontent.com/LuisPontesLS/presentation-card/2c6ca0cf1197657c5aa885e3b4c0a2efa54fbc16/src/assets/readme-1.png"
         alt="Print da tela com a aba 'Sobre' selecionada.">
-    <h3>Aba 2 - Minhas Redes e <strong>link</strong> para meu currículo</h3>
-    <img src="https://raw.githubusercontent.com/LuisPontesLS/presentation-card/2c6ca0cf1197657c5aa885e3b4c0a2efa54fbc16/src/assets/readme-2.png"
+    <h3>Aba 2 - Minhas Redes com <strong>links</strong> para meu currículo, resume, Linkedin e GitHub</h3>
+    <img src="https://github.com/LuisPontesLS/presentation-card/blob/master/src/assets/readme-2.png?raw=true"
         alt="Print da tela com a aba 'Minhas Redes' selecionada.">
     <p>Se preferia, pode acessá-la diretamente clicando <a href="https://luispontesls.github.io/presentation-card/"
             target="_blank">neste link</a>.</p> :smile:
