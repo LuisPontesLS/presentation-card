@@ -215,5 +215,24 @@ essa aba estará sempre selecionada ao carregar*/
 }
 
 /*--------------------------------------------------------------------------*/
+/*BARRA DE ROLAGEM --------------------------------------------------------*/
+.redes-sociais::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar - largura de toda a barra de rolagem */
+}
 
+.redes-sociais::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: black;
+    /* bar background color (where it scrolls) - cor do fundo da barra (onde ela rola) */
+}
+
+.redes-sociais::-webkit-scrollbar-thumb {
+    background-color: #49AAEE;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid black;
+    /* creates padding around scroll thumb */
+}
 /*02:23 linha 145 css*/
