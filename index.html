@@ -1,108 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta name="description" content="Cartão de apresentação sobre formação, cursos e apresentação de projetos">
-    <meta name="author" content="Luis L. Pontes">
-    <meta name="keywords" content="html, css, javascript, github, projetos, cartão, apresentação">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/assets/favicon-lp.ico" type="image/x-icon">
+  <head>
+    <meta
+      name="description"
+      content="Cartão de apresentação sobre formação, cursos e apresentação de projetos"
+    />
+    <meta name="author" content="Luis L. Pontes" />
+    <meta
+      name="keywords"
+      content="html, css, javascript, github, projetos, cartão, apresentação"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon-lp.ico"
+      type="image/x-icon"
+    />
     <!--Fonte no google fonts: vt323 regular 400 (achei feia)-->
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
     <title>Cartão virtual</title>
-</head>
-<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+  </head>
+  <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 
-<body>
-
+  <body>
     <!--TODO O CARTÃO quadro azul - foto de perfil, nome e cargo-->
     <main class="cartao">
-
-        <!--==============================================================================
+      <!--==============================================================================
         APRESENTAÇÃO (FOTO, NOME E CARGO) QUADRO VERDE-->
-        <div class="minhas-informacoes">
-            <img class="foto-perfil" src="./src/assets/foto-perfil.jpeg" alt="foto de perfil">
-            <h1 class="nome">Luis Leonardo Pontes</h1>
-            <h2 class="cargo">Desenvolvedor Front End Júnior</h2>
-        </div>
+      <div class="minhas-informacoes">
+        <img
+          class="foto-perfil"
+          src="./src/assets/foto-perfil.jpeg"
+          alt="foto de perfil"
+        />
+        <h1 class="nome">Luis Leonardo Pontes</h1>
+        <h2 class="cargo">Desenvolvedor Front End Júnior</h2>
+      </div>
+      <!--==============================================================================-->
+
+      <!--ESTA DIV ABRIGA TODO O RESTANTE quadro laranja - abriga dois outros: abas de nav e texto de apresent-->
+      <div class="conteudo">
+        <!--==============================================================================
+            ABAS DE NAVEGAÇÃO -->
+        <ul class="abas">
+          <!----------------------------------------------------------------------------
+                ABA 1 - Sobre -->
+          <li class="aba selecionado" id="sobre-mim">
+            <img
+              src="./src/assets/logos/logo-perfil.png"
+              alt="ícone do perfil"
+            />
+          </li>
+
+          <!---------------------------------------------------------------------------- 
+                ABA 2 - Redes Sociais -->
+          <li class="aba" id="minhas-redes">
+            <img
+              src="./src/assets/logos/logo-contatos.png"
+              alt="ícone de contatos"
+            />
+          </li>
+        </ul>
         <!--==============================================================================-->
 
-        <!--ESTA DIV ABRIGA TODO O RESTANTE quadro laranja - abriga dois outros: abas de nav e texto de apresent-->
-        <div class="conteudo">
+        <!--quadro amarelo - sobre mim ---------------------------------------------->
+        <div class="informacoes-abas">
+          <div class="informacao selecionado" id="informacao-sobre-mim">
+            <h3 class="sub-titulo">Sobre</h3>
 
-            <!--==============================================================================
-            ABAS DE NAVEGAÇÃO -->
-            <ul class="abas">
-
-                <!----------------------------------------------------------------------------
-                ABA 1 - Sobre -->
-                <li class="aba selecionado" id="sobre-mim">
-                    <img src="./src/assets/logos/logo-perfil.png" alt="ícone do perfil">
-                </li>
-
-                <!---------------------------------------------------------------------------- 
-                ABA 2 - Redes Sociais -->
-                <li class="aba" id="minhas-redes">
-                    <img src="./src/assets/logos/logo-contatos.png" alt="ícone de contatos">
-                </li>
-            </ul>
-            <!--==============================================================================-->
-
-            <!--quadro amarelo - sobre mim ---------------------------------------------->
-            <div class="informacoes-abas">
-                <div class="informacao selecionado" id="informacao-sobre-mim">
-                    <h3 class="sub-titulo">Sobre</h3>
-
-                    <div class="descricao">
-                        <p>Olá, meu nome é Luis Leonardo, seja bem vindo(a)!</p>
-                        <p>Sou formado em Análise e Desenvolvimento de Sistemas e tenho
-                            focado meus estudos em Front end. Atualmente desenvolvo
-                            habilidades em <span>HTML</span>, <span>CSS</span>,
-                            <span>JavaScript</span> e <span>Node.js</span> através de projetos apresentados no
-                            <span>GitHub</span>, além de estudar <span>inglês</span>.
-                        </p>
-                        <p>Meus hobbies variam entre ler, andar de bike, video games, trilhas, filmes e músicas.
-                        </p>
-                    </div>
-                </div>
+            <div class="descricao">
+              <p>Olá, meu nome é Luis Leonardo, seja bem vindo(a)!</p>
+              <p>
+                Sou formado em Análise e Desenvolvimento de Sistemas com
+                conhecimentos em:
+                <span>Node.js</span>, <span>JavaScript</span>, <span>CSS</span>,
+                <span>HTML</span> com projetos apresentados no
+                <span>GitHub</span>. Além destes, possui conceitos de
+                <span>UX/UI</span>, noções de <span>MySQL</span>,
+                <span>Python</span> e <span>inglês</span> intermediário.
+              </p>
+              <p>
+                Meus hobbies variam entre ler, andar de bike, video games,
+                trilhas, filmes e músicas.
+              </p>
             </div>
-
-            <!--Aba 2 ------------------------------------------------------------>
-
-            <!--'div' adicionada-->
-            <div class="informacoes-abas">
-
-                <div class="informacao" id="informacao-minhas-redes">
-                    <h3 class="sub-titulo">Minhas redes</h3>
-                    <ul class="redes-sociais">
-                        <!-- CURRÍCULO -->
-                        <li>
-                            <a href="https://drive.google.com/file/d/1muHBek504a02waj5AMLGDdwyR0y2YQOl/view?usp=sharing" target="_blank" class="curriculo">Currículo</a>
-                        </li>
-
-                        <!-- RESUME -->
-                        <li>
-                            <a href="https://drive.google.com/file/d/159isHSIc4UolYmXXaJXuZWK1da6ha6fB/view?usp=sharing" target="_blank" class="curriculo">Resume</a>
-                        </li>
-
-                        <!-- Adicionar nova aba: 01:52 v3 -->
-
-                        <li><a href="https://www.linkedin.com/in/luis-leonardo-pontes/" target="_blank"
-                                class="linkedin">Linkedin</a></li>
-                        <li><a href="https://github.com/LuisPontesLS" target="_blank" class="github">GitHub</a></li>
-                    </ul>
-                </div>
-            </div>
-
+          </div>
         </div>
 
+        <!--Aba 2 ------------------------------------------------------------>
+
+        <!--'div' adicionada-->
+        <div class="informacoes-abas">
+          <div class="informacao" id="informacao-minhas-redes">
+            <h3 class="sub-titulo">Minhas redes</h3>
+            <ul class="redes-sociais">
+              <!-- CURRÍCULO -->
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1fYPHBDT2_dUnWsrB-lgCXsU3VgyDleml/view?usp=sharing"
+                  target="_blank"
+                  class="curriculo"
+                  >Currículo</a
+                >
+              </li>
+
+              <!-- RESUME -->
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/159isHSIc4UolYmXXaJXuZWK1da6ha6fB/view?usp=sharing"
+                  target="_blank"
+                  class="curriculo"
+                  >Resume</a
+                >
+              </li>
+
+              <!-- Adicionar nova aba: 01:52 v3 -->
+
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/luis-leonardo-pontes/"
+                  target="_blank"
+                  class="linkedin"
+                  >Linkedin</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/LuisPontesLS"
+                  target="_blank"
+                  class="github"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!--==============================================================================-->
     <script src="./src/js/index.js"></script>
-</body>
-
+  </body>
 </html>
